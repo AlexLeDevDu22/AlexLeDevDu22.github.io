@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Loader from "./components/Loader";
 import ScrollProgressBar from "./components/ScrollProgressBar";
 import Navbar from "./components/Navbar";
-import Hero from "./sections/Hero";
+// import Hero from "./sections/Hero";
 import About from "./sections/About";
 import Projects from "./sections/Projects";
 import Freelance from "./sections/Freelance";
@@ -26,7 +26,7 @@ export default function App() {
       <ScrollProgressBar />
       <Navbar />
       <main className="bg-black text-white">
-        <Hero />
+        {/* <Hero /> */}
         <About />
         <Freelance />
         <Projects />
