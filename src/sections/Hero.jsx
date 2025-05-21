@@ -18,7 +18,7 @@ export default function Hero() {
   const [index, setIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
-  const [cursorVisible, setCursorVisible] = useState(true);
+  const [, setCursorVisible] = useState(true);
   const shouldBlink =
     !isDeleting && displayedText.length === slogans[index].length;
 

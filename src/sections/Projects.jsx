@@ -80,6 +80,7 @@ export default function Projects() {
                 <a
                   href={project.github}
                   target="_blank"
+                  rel="noreferrer"
                   className="inline-block mt-4 text-green-400 hover:underline"
                 >
                   View on GitHub →

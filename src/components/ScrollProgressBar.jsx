@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 
 export default function ScrollProgressBar() {
-  const [scrollY, setScrollY] = useState(0);
+  const [, setScrollY] = useState(0);
   const controls = useAnimation();
 
   useEffect(() => {
