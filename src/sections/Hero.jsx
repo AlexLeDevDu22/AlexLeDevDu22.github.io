@@ -58,7 +58,7 @@ export default function Hero() {
 
   return (
     <motion.section
-      className="relative min-h-screen w-full flex flex-col justify-center items-center bg-black text-white overflow-hidden"
+      className="relative min-h-screen w-full flex flex-col justify-center items-center bg-black text-white"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -79,9 +79,9 @@ export default function Hero() {
         transition={{ repeat: Infinity, duration: 25, ease: "easeInOut" }}
       />
 
-      <div className="relative z-10 w-full text-center space-y-8 font-mono">
+      <div className="relative w-full text-center space-y-8 font-mono">
         <motion.div
-          className="relative z-10 w-full text-left space-y-8 font-mono px-6 md:pl-[15%] xl:pl-[15%]"
+          className="relative w-full text-left space-y-8 font-mono px-6 md:pl-[15%] xl:pl-[15%]"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}

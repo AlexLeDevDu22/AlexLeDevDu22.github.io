@@ -3,21 +3,21 @@ import { FaRocket, FaWrench, FaCodeBranch } from "react-icons/fa";
 
 const blogUpdates = [
   {
-    title: "\uD83D\uDE80 TikTok Automation Launch",
+    title: "   TikTok Automation Launch",
     date: "Jan 2024",
     icon: <FaRocket />,
     description:
       "Launched my automated TikTok repost system. Fully autonomous, profitable, and live on Raspberry Pi. Managed multi-account stats and LED feedback system!",
   },
   {
-    title: "\uD83D\uDD28 Mouse T1 Prototype",
+    title: "   Mouse T1 Prototype",
     date: "Aug 2024",
     icon: <FaWrench />,
     description:
       "Built a device combining ESP32, LCD, and Android app to exchange images & data via HTTP/Wi-Fi. Showcased C++, root Android features, and microcontroller work.",
   },
   {
-    title: "\uD83D\uDC7E Drawwy \u2013 NSI Game",
+    title: "   Drawwy \u2013 NSI Game",
     date: "Mar 2025",
     icon: <FaCodeBranch />,
     description:
@@ -51,10 +51,10 @@ export default function Blog() {
               transition={{ duration: 0.6, delay: index * 0.2 }}
               viewport={{ once: true }}
             >
-              <span className="absolute -left-4 top-1 text-green-400 text-lg">
+              <span className="absolute -left-4 top-1.5 text-green-400 text-lg">
                 {entry.icon}
               </span>
-              <h3 className="text-xl font-semibold mb-1 text-green-300">
+              <h3 className="text-xl font-semibold mb-1 ml-2 text-green-300">
                 {entry.title}
               </h3>
               <p className="text-sm text-zinc-400 mb-2">{entry.date}</p>

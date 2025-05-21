@@ -19,7 +19,7 @@ export default function ScrollProgressBar() {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 right-0 h-1 origin-left bg-green-400 z-50"
+      className="fixed top-0 left-0 right-0 h-1 origin-left bg-green-400 z-100"
       initial={{ scaleX: 0 }}
       animate={controls}
       style={{ transformOrigin: "left center" }}

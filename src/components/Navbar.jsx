@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Shell from "./Shell";
 
 const navLinks = [
   { id: "hero", label: "Home" },
@@ -8,6 +9,7 @@ const navLinks = [
   { id: "freelance", label: "Freelance" },
   { id: "blog", label: "Blog" },
   { id: "contact", label: "Contact" },
+  { id: "github", label: "GitHub" },
 ];
 
 export default function Navbar() {
@@ -28,22 +30,27 @@ export default function Navbar() {
         initial={{ y: -80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b border-green-500 bg-black/30
+        className={`fixed top-0 left-0 right-0 z-10 backdrop-blur-md border-b border-green-500 bg-black/30
           ${
             scrolled ? "bg-black/70 shadow-xl" : "bg-transparent shadow-none"
           } transition-all duration-500`}
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-          <a
-            href="#hero"
-            className="text-3xl font-extrabold transition select-none  relative inline-block text-green-400 hover:text-green-500 transition-all duration-300 
-             after:absolute after:-bottom-1 after:left-0 
-             after:w-0 after:h-[2px] after:bg-green-400 
-             after:transition-all after:duration-300 
-             hover:after:w-full"
-          >
-            AlexGarin
-          </a>
+          <div className="flex items-center space-x-4">
+            <a
+              href="#hero"
+              className="text-3xl font-extrabold select-none relative inline-block text-green-400 hover:text-green-500 transition-all duration-300
+                after:absolute after:-bottom-1 after:left-0 
+                after:w-0 after:h-[2px] after:bg-green-400 
+                after:transition-all after:duration-300 
+                hover:after:w-full"
+            >
+              AlexGarin
+            </a>
+            <div className="hidden md:block">
+              <Shell />
+            </div>
+          </div>
 
           <ul className="hidden md:flex space-x-10 text-green-400 font-semibold tracking-wide select-none">
             {navLinks.map((link) => (
@@ -124,10 +131,10 @@ export default function Navbar() {
                   <a
                     href={`#${link.id}`}
                     className="relative inline-block text-green-400 hover:text-green-500 transition-all duration-300 
-             after:absolute after:-bottom-1 after:left-0 
-             after:w-0 after:h-[2px] after:bg-green-400 
-             after:transition-all after:duration-300 
-             hover:after:w-full"
+                      after:absolute after:-bottom-1 after:left-0 
+                      after:w-0 after:h-[2px] after:bg-green-400 
+                      after:transition-all after:duration-300 
+                      hover:after:w-full"
                     onClick={() => setOpen(false)}
                   >
                     {link.label}

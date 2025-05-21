@@ -28,7 +28,7 @@ export default function Contact() {
         </motion.p>
 
         <motion.form
-          action="https://formspree.io/f/YOUR_FORM_ID" // 🔁 Remplace par ton ID formspree
+          action="https://getform.io/f/bwnwglla" // 🔁 Remplace par ton ID formspree
           method="POST"
           className="grid gap-6 bg-zinc-900 p-8 rounded-2xl shadow-lg border border-zinc-800"
           initial={{ opacity: 0, y: 30 }}
@@ -44,7 +44,7 @@ export default function Contact() {
               name="name"
               required
               className="bg-zinc-800 text-white px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-              placeholder="Alex, John Doe..."
+              placeholder="Steve, John Doe..."
             />
           </label>
 

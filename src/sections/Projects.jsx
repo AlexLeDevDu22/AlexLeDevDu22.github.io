@@ -30,7 +30,7 @@ const projects = [
 export default function Projects() {
   return (
     <section
-      className="min-h-screen bg-gradient-to-b from-zinc-950 to-zinc-900 py-20 px-6 relative overflow-hidden"
+      className="min-h-screen from-zinc-950 to-zinc-900 py-20 px-6 relative"
       id="projects"
     >
       {/* BACKGROUND MOTION GLOW */}
