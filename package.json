@@ -49,7 +49,7 @@
     "postcss": "^8.5.3",
     "tailwindcss": "^3.4.4"
   },
-  "homepage": ".",
+  "homepage": "https://alexledevdu22.github.io/",
   "description": "My Portfolio",
   "main": "tailwind.config.js",
   "repository": {
