@@ -90,7 +90,7 @@ export default function Hero() {
             <span className="text-teal-400">alex@portfolio:~$</span>{" "}
             <span>{displayedText}</span>
             <span
-              className={`inline-block bg-teal-600 w-[1ch] h-[1.2em] bg-white ml-1 align-middle ${
+              className={`inline-block bg-teal-600 w-[1ch] h-[1.2em] ml-1 align-middle ${
                 shouldBlink ? "animate-blink" : ""
               }`}
             ></span>
