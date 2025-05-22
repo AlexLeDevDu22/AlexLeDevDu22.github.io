@@ -8,7 +8,7 @@ import Projects from "./sections/Projects";
 import Freelance from "./sections/Freelance";
 import Blog from "./sections/Blog";
 import Contact from "./sections/Contact";
-import GithubStats from "./sections/GithubStats";
+// import GithubStats from "./sections/GithubStats";
 import TechStack from "./sections/TechStack";
 import DevAnim from "./sections/DevAnim";
 import Footer from "./components/Footer";
@@ -35,7 +35,7 @@ export default function App() {
         <Projects />
         <DevAnim />
         <TechStack />
-        <GithubStats />
+        {/* <GithubStats /> */}
         <Blog />
         <Contact />
       </main>
