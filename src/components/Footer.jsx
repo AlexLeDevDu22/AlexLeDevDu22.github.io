@@ -25,14 +25,14 @@ export default function Footer() {
             <FaGithub />
           </a>
           <a
-            href="mailto:child.garin@gmail.com"
+            href="mailto:alex.garin.pro@gmail.com"
             aria-label="Email"
             className="hover:text-green-500 transition-transform hover:scale-125"
           >
             <FaEnvelope />
           </a>
           <a
-            href="https://linkedin.com/in/alexgarin"
+            href="https://www.linkedin.com/in/alexandre-garin-73428a367/"
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"

@@ -22,7 +22,7 @@ const projects = [
     image: "/assets/tiktok-publisher.png",
     description:
       "A full-stack automation system that runs on a Raspberry Pi, managing multiple TikTok accounts, publishing content, scraping stats, and syncing live data to LED strips.",
-    stack: ["Python", "JavaScript", "Web Scraping", "Raspberry Pi", "WS2812B"],
+    stack: ["Python", "JavaScript", "Web Scraping", "Raspberry Pi", "Zapier"],
     github: "https://github.com/AlexLeDevDu22/Tiktok-Publicator-Auto",
   },
 ];

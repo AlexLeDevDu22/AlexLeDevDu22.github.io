@@ -1,7 +1,41 @@
 import { motion } from "framer-motion";
-import { Mail, Send, User, MessageSquare } from "lucide-react";
+import { Mail, Send, User, MessageSquare, Tag } from "lucide-react";
+import { useEffect, useRef } from "react";
 
 export default function Contact() {
+  const subjectRef = useRef();
+
+  function applySubjectFromStorage() {
+    const stored = localStorage.getItem("contactSubject");
+    if (stored && subjectRef.current) {
+      subjectRef.current.value = stored;
+      localStorage.removeItem("contactSubject");
+    }
+  }
+
+  useEffect(() => {
+    // Applique au montage
+    applySubjectFromStorage();
+
+    // Hashchange (pour navigation classique)
+    window.addEventListener("hashchange", applySubjectFromStorage);
+    window.addEventListener("subjectUpdate", applySubjectFromStorage);
+
+    // Focus sur la section contact (utile si déjà sur #contact)
+    const section = document.getElementById("contact");
+    if (section) {
+      section.addEventListener("focusin", applySubjectFromStorage);
+    }
+
+    return () => {
+      window.removeEventListener("hashchange", applySubjectFromStorage);
+      window.removeEventListener("subjectUpdate", applySubjectFromStorage);
+      if (section) {
+        section.removeEventListener("focusin", applySubjectFromStorage);
+      }
+    };
+  }, []);
+
   return (
     <section
       id="contact"
@@ -44,7 +78,7 @@ export default function Contact() {
               name="name"
               required
               className="bg-zinc-800 text-white px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-              placeholder="Steve, John Doe..."
+              placeholder="Steve Rogers, Jack Shephard..."
             />
           </label>
 
@@ -57,8 +91,30 @@ export default function Contact() {
               name="email"
               required
               className="bg-zinc-800 text-white px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-              placeholder="you@example.com"
+              placeholder="your@example.com"
             />
+          </label>
+
+          <label className="flex flex-col gap-2">
+            <span className="text-sm font-medium flex items-center gap-2">
+              <Tag className="w-4 h-4" /> Subject
+            </span>
+            <select
+              name="subject"
+              required
+              ref={subjectRef}
+              className="bg-zinc-800 text-white px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+              defaultValue=""
+            >
+              <option value="" disabled>
+                Choose a subject...
+              </option>
+              <option value="⚡ Fast Fixes">⚡ Fast Fixes</option>
+              <option value="🛠️ Feature Upgrades">🛠️ Feature Upgrades</option>
+              <option value="🚀 Full Development">🚀 Full Development</option>
+              <option value="Automation">🤖 Automation</option>
+              <option value="Other">💬 Other</option>
+            </select>
           </label>
 
           <label className="flex flex-col gap-2">

@@ -41,15 +41,14 @@ const quickSummary = [
 ];
 
 const aboutResponse = [
-  "👋 Hey! I'm Alex Garin, a frontend developer who loves building performant, animated, and clean UIs.",
+  "👋 Hey! I'm Alex Garin, a fullstack developer who loves building performant, animated, and clean UIs.",
   "I'm focused on React, TailwindCSS, Framer Motion, and accessibility best practices.",
   "I enjoy working on projects that combine creativity and technical depth.",
 ];
 
 const skillsResponse = [
   "🚀 Skills:",
-  "- React, React Hooks, Next.js",
-  "- TailwindCSS, Styled Components",
+  "- Vanilla, React, Tailwind",
   "- Framer Motion, GSAP",
   "- REST APIs, GraphQL",
   "- TypeScript, Zustand, Redux",
@@ -74,15 +73,17 @@ const blogResponse = [
 
 const contactResponse = [
   "📬 Contact info:",
-  "Email: alex@example.com",
-  "LinkedIn: linkedin.com/in/alexgarin",
+  "Email: alex@AlexLeDevDu22.com",
+  "LinkedIn: https://www.linkedin.com/in/alexandre-garin-73428a367/",
   "GitHub: github.com/alexgarin",
   "Or use the contact form below on the website.",
 ];
 
 const githubResponse = ["🔗 GitHub: https://github.com/AlexLeDevDu22"];
 
-const linkedinResponse = ["🔗 LinkedIn: https://linkedin.com/in/alexgarin"];
+const linkedinResponse = [
+  "🔗 LinkedIn: https://www.linkedin.com/in/alexandre-garin-73428a367/",
+];
 
 const resumeResponse = ["📄 No Resume yet sorry 😅..."];
 

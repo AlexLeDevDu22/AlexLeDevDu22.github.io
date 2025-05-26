@@ -8,9 +8,10 @@ import Projects from "./sections/Projects";
 import Freelance from "./sections/Freelance";
 import Blog from "./sections/Blog";
 import Contact from "./sections/Contact";
-// import GithubStats from "./sections/GithubStats";
+import GithubStats from "./sections/GithubStats";
 import TechStack from "./sections/TechStack";
 import DevAnim from "./sections/DevAnim";
+import Pitch from "./sections/Pitch";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import PageOverlay from "./components/PageOverlay";
@@ -32,10 +33,11 @@ export default function App() {
         <Hero />
         <About />
         <Freelance />
+        {window.innerWidth > 768 && <DevAnim />}
         <Projects />
-        <DevAnim />
         <TechStack />
-        {/* <GithubStats /> */}
+        <GithubStats />
+        <Pitch />
         <Blog />
         <Contact />
       </main>

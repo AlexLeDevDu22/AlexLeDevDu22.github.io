@@ -5,12 +5,13 @@ import Shell from "./Shell";
 const navLinks = [
   { id: "hero", label: "Home" },
   { id: "about", label: "About" },
-  { id: "projects", label: "Projects" },
   { id: "freelance", label: "Freelance" },
+  { id: "projects", label: "Projects" },
   { id: "blog", label: "Blog" },
   { id: "contact", label: "Contact" },
-  { id: "github", label: "GitHub" },
 ];
+if (window.innerWidth > 768)
+  navLinks.splice(3, 0, { id: "demo", label: "Demo" });
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
