@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { is } from "date-fns/locale";
 
 // Timeline de code réaliste avec comportement humain et plusieurs fichiers
 const fileStructure = {
