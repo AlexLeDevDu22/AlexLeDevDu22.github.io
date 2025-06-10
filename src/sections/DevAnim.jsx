@@ -605,7 +605,7 @@ const UIComponents = {
       initial={{ x: 400, opacity: 0, scale: 0.8 }}
       animate={{ x: 0, opacity: 1, scale: 1 }}
       exit={{ x: 400, opacity: 0, scale: 0.8 }}
-      className="relative top-20 right-6 bg-gradient-to-r from-emerald-500 to-teal-600 text-white p-4 rounded-2xl shadow-2xl z-40 max-w-sm"
+      className="absolute top-3 right-4 bg-gradient-to-r from-emerald-500 to-teal-600 text-white p-4 rounded-2xl shadow-2xl z-40 max-w-sm"
     >
       <div className="flex items-center gap-3">
         <motion.div
@@ -629,7 +629,7 @@ const UIComponents = {
       initial={{ x: -350, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{ type: "spring", stiffness: 70, damping: 20 }}
-      className="relative left-6 top-24 w-64 bg-white text-gray-800 p-6 rounded-2xl shadow-2xl z-30 border border-gray-100"
+      className="absolute left-3 top-3 w-64 bg-white text-gray-800 p-6 rounded-2xl shadow-2xl z-30 border border-gray-100"
     >
       <motion.h4
         className="font-bold mb-6 text-lg flex items-center gap-3 text-gray-700"

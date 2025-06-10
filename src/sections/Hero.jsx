@@ -10,8 +10,8 @@ const slogans = [
 ];
 
 function getRandomTypingDelay(char) {
-  if (char === " ") return 150 + Math.random() * 100;
-  return 40 + Math.random() * 40;
+  if (char === " ") return 120 + Math.random() * 100;
+  return 20 + Math.random() * 25;
 }
 
 export default function Hero() {
@@ -38,7 +38,7 @@ export default function Hero() {
     if (isDeleting) {
       timeout = setTimeout(() => {
         setDisplayedText(fullText.substring(0, currentLength - 1));
-      }, 30);
+      }, 1);
       if (currentLength === 0) {
         setIsDeleting(false);
         setIndex((prev) => (prev + 1) % slogans.length);
